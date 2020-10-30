@@ -21,17 +21,17 @@ class Business extends React.Component {
                 <div className="image-container">
                     <img src='{this.imageSrc}' alt=''/>
                 </div>
-                <h2>{this.name}</h2>
+                <h2>{business.name}</h2>
                 <div className="Business-information">
                     <div className="Business-address">
-                        <p>{this.adress}</p>
-                        <p>{this.city}</p>
-                        <p>{this.state} {this.zipCode}</p>
+                        <p>{business.adress}</p>
+                        <p>{business.city}</p>
+                        <p>{business.state} {business.zipCode}</p>
                     </div>
                     <div className="Business-reviews">
-                        <h3>{this.category.toUpperCase()}</h3>
-                        <h3 className="rating">{this.rating} stars</h3>
-                        <p>{this.reviewcount} reviews</p>
+                        <h3>{business.category.toUpperCase()}</h3>
+                        <h3 className="rating">{business.rating} stars</h3>
+                        <p>{business.reviewcount} reviews</p>
                     </div>
                 </div>
             </div>
